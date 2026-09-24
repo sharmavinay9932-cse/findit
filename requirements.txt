@@ -4,3 +4,4 @@ Pillow
 Werkzeug
 mysql-connector-python
 python-dotenv
+gunicorn
