@@ -1,0 +1,6 @@
+Flask
+Flask-Cors
+Pillow
+Werkzeug
+mysql-connector-python
+python-dotenv

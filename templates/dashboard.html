@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - FindIt{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="/static/css/dashboard.css">{% endblock %}
+
+{% block content %}
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <ul class="sidebar-nav">
+            <li><a href="/dashboard" class="active">Dashboard</a></li>
+            <li><a href="/matches">Matches</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul>
+    </aside>
+    
+    <div class="dashboard-content">
+        <h2 id="welcome-message">Welcome!</h2>
+        
+        <div class="stats dashboard-stats">
+            <div class="stat-card">
+                <h3 id="stat-lost">0</h3>
+                <p>My Lost Items</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="stat-found">0</h3>
+                <p>My Found Items</p>
+            </div>
+        </div>
+        
+        <div class="quick-actions">
+            <h3>Quick Actions</h3>
+            <div class="hero-buttons">
+                <a href="/report-lost" class="btn btn-primary">Report Lost Item</a>
+                <a href="/report-found" class="btn btn-secondary">Report Found Item</a>
+                <a href="/browse" class="btn btn-outline">Browse Items</a>
+            </div>
+        </div>
+        
+        <div class="recent-reports">
+            <h3>My Recent Reports</h3>
+            <div id="user-items-list" class="items-grid">
+                <!-- User items injected here -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}<script src="/static/js/dashboard.js"></script>{% endblock %}

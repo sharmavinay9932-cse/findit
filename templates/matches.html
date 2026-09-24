@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Matches - FindIt{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="/static/css/dashboard.css">{% endblock %}
+
+{% block content %}
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <ul class="sidebar-nav">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/matches" class="active">Matches</a></li>
+            <li><a href="/profile">Profile</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul>
+    </aside>
+    
+    <div class="dashboard-content">
+        <h2>Potential Matches</h2>
+        <p>Select one of your lost items to see potential matches.</p>
+        
+        <div class="form-group">
+            <select id="lost-item-select">
+                <option value="">Select a lost item...</option>
+            </select>
+        </div>
+        
+        <div id="matches-list" class="items-grid mt-4">
+            <!-- Matches injected here -->
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}<script src="/static/js/matches.js"></script>{% endblock %}

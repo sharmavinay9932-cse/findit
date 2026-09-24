@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Browse Items - FindIt{% endblock %}
+
+{% block content %}
+<div class="browse-header">
+    <h2>Browse Items</h2>
+    <div class="filters">
+        <input type="text" id="search-input" placeholder="Search items...">
+        <select id="filter-type">
+            <option value="all">All Types</option>
+            <option value="lost">Lost Items</option>
+            <option value="found">Found Items</option>
+        </select>
+        <select id="filter-category">
+            <option value="all">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Documents">Documents</option>
+            <option value="Bags">Bags</option>
+            <option value="Books">Books</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Keys">Keys</option>
+            <option value="ID Cards">ID Cards</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+</div>
+
+<div class="items-grid" id="browse-items-list">
+    <!-- Injected via JS -->
+    <p>Loading items...</p>
+</div>
+{% endblock %}
+{% block extra_js %}<script src="/static/js/items.js"></script>{% endblock %}

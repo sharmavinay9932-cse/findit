@@ -1,0 +1,10 @@
+[
+    {
+        "id": "1",
+        "name": "Demo Admin",
+        "email": "admin@findit.edu",
+        "password": "scrypt:32768:8:1$C0YpY5q79v2ZJQfO$9f7e5b206c9a30b42f5c9071c8c62c2f1f0e42d76f8749a4f664a7872d8a59c3a38615b3e215d2a76f8e79c5a1a1f098c474d284f6c46a6f6c95c898c62b4742", 
+        "role": "admin",
+        "member_since": "2026-01-01"
+    }
+]

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}FindIt - Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Lost something? Let's find it.</h1>
+        <p>FindIt helps campus communities report lost and found belongings, discover potential matches, and safely reconnect people with their belongings.</p>
+        <div class="hero-buttons">
+            <a href="/report-lost" class="btn btn-primary">Report Lost Item</a>
+            <a href="/report-found" class="btn btn-secondary">Report Found Item</a>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-card">
+        <h3>152</h3>
+        <p>Items Reported</p>
+    </div>
+    <div class="stat-card">
+        <h3>120</h3>
+        <p>Items Found</p>
+    </div>
+    <div class="stat-card">
+        <h3>45</h3>
+        <p>Potential Matches</p>
+    </div>
+    <div class="stat-card">
+        <h3>89</h3>
+        <p>Items Returned</p>
+    </div>
+</section>
+
+<section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+        <div class="step">
+            <div class="step-icon">1</div>
+            <h4>Report</h4>
+            <p>Upload details of the item you lost or found.</p>
+        </div>
+        <div class="step">
+            <div class="step-icon">2</div>
+            <h4>Discover</h4>
+            <p>Our system suggests potential matches.</p>
+        </div>
+        <div class="step">
+            <div class="step-icon">3</div>
+            <h4>Verify</h4>
+            <p>Answer questions to prove ownership.</p>
+        </div>
+        <div class="step">
+            <div class="step-icon">4</div>
+            <h4>Return</h4>
+            <p>Safely get your belongings back.</p>
+        </div>
+    </div>
+</section>
+
+<section class="recent-items">
+    <h2>Recently Found Items</h2>
+    <div class="items-grid" id="recent-found-items">
+        <!-- Injected via JS -->
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Can't find your item? Report it.</h2>
+    <a href="/report-lost" class="btn btn-primary">Report Now</a>
+</section>
+{% endblock %}

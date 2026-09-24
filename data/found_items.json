@@ -1,0 +1,36 @@
+[
+    {
+        "id": "item2",
+        "user_id": "1",
+        "name": "White Laptop Charger",
+        "category": "Electronics",
+        "brand": "Apple",
+        "color": "White",
+        "location": "Library 2nd Floor",
+        "date": "2026-09-20",
+        "time": "18:00",
+        "description": "Found a white charger plugged into a wall outlet near the quiet study area.",
+        "unique_features": "",
+        "image": null,
+        "status": "reported",
+        "created_at": "2026-09-21T09:00:00",
+        "type": "found"
+    },
+    {
+        "id": "item3",
+        "user_id": "1",
+        "name": "Blue Hydro Flask",
+        "category": "Other",
+        "brand": "Hydro Flask",
+        "color": "Blue",
+        "location": "Gym",
+        "date": "2026-09-22",
+        "time": "10:00",
+        "description": "Blue water bottle left near the treadmills.",
+        "unique_features": "Has a campus sticker on it",
+        "image": null,
+        "status": "reported",
+        "created_at": "2026-09-22T11:00:00",
+        "type": "found"
+    }
+]

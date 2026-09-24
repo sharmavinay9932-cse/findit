@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Item Details - FindIt{% endblock %}
+
+{% block content %}
+<div class="item-details-container">
+    <div id="item-details-content">
+        <p>Loading...</p>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script>
+    const ITEM_ID = "{{ item_id }}";
+</script>
+<script src="/static/js/items.js"></script>
+{% endblock %}

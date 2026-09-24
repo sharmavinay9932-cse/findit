@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Profile - FindIt{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="/static/css/dashboard.css">{% endblock %}
+
+{% block content %}
+<div class="dashboard-layout">
+    <aside class="sidebar">
+        <ul class="sidebar-nav">
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/matches">Matches</a></li>
+            <li><a href="/profile" class="active">Profile</a></li>
+            <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul>
+    </aside>
+    
+    <div class="dashboard-content">
+        <h2>My Profile</h2>
+        <div class="profile-card" id="profile-details">
+            <!-- Injected via JS -->
+            <p>Loading...</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block extra_js %}<script src="/static/js/dashboard.js"></script>{% endblock %}
